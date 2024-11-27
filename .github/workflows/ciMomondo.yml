@@ -1,0 +1,26 @@
+name: Momondo CI pipeline
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create database
+        run: |
+          sudo /etc/init.d/mysql start
+          mysql -uroot -proot -hlocalhost < ./db/momondo-testing.sql
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate --strict
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Run unit test
+        run: composer run-script unittest
+
+      - name: Run integration test
+        run: composer run-script test

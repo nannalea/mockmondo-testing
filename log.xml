@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="GetSearchResultsTest" file="C:\xampp\htdocs\momondo-testing\php-test\GetSearchResultsTest.php" tests="7" assertions="9" errors="0" failures="0" skipped="0" time="0.011380">
+    <testcase name="testSearchResultsIsArray" file="C:\xampp\htdocs\momondo-testing\php-test\GetSearchResultsTest.php" line="21" class="GetSearchResultsTest" classname="GetSearchResultsTest" assertions="1" time="0.006120"/>
+    <testcase name="testSearchResultsNotEmpty" file="C:\xampp\htdocs\momondo-testing\php-test\GetSearchResultsTest.php" line="26" class="GetSearchResultsTest" classname="GetSearchResultsTest" assertions="1" time="0.001664"/>
+    <testcase name="testSearchResultsIsArrayOfArrays" file="C:\xampp\htdocs\momondo-testing\php-test\GetSearchResultsTest.php" line="32" class="GetSearchResultsTest" classname="GetSearchResultsTest" assertions="3" time="0.000487"/>
+    <testcase name="testSearchReturnsEmptyArrayWhenNoResultsFound" file="C:\xampp\htdocs\momondo-testing\php-test\GetSearchResultsTest.php" line="40" class="GetSearchResultsTest" classname="GetSearchResultsTest" assertions="1" time="0.000651"/>
+    <testcase name="testSearchCanHandleEmptyStrings" file="C:\xampp\htdocs\momondo-testing\php-test\GetSearchResultsTest.php" line="48" class="GetSearchResultsTest" classname="GetSearchResultsTest" assertions="1" time="0.001225"/>
+    <testcase name="testSearchCanHandleSpecialCharacters" file="C:\xampp\htdocs\momondo-testing\php-test\GetSearchResultsTest.php" line="56" class="GetSearchResultsTest" classname="GetSearchResultsTest" assertions="1" time="0.000554"/>
+    <testcase name="testSearchCanHandleVeryLongStrings" file="C:\xampp\htdocs\momondo-testing\php-test\GetSearchResultsTest.php" line="71" class="GetSearchResultsTest" classname="GetSearchResultsTest" assertions="1" time="0.000678"/>
+  </testsuite>
+</testsuites>

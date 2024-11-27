@@ -1,0 +1,31 @@
+# Ignore files and sub dirs in the /uploaded-images directory
+/uploaded-images/*
+# but do not ignore the img-unknown-user.svg file
+!/uploaded-images/img-unknown-user.svg
+
+.DS_Store
+/vendor/
+/node_modules/
+node_modules/*
+.phpunit.result.cache
+/.phpunit.cache/*
+/db/Info.php/
+_db-values.php
+
+/.phpunit.cache/test-results
+
+# Nanna
+_test-output.php
+/php-test/true-false-attempt.php
+
+/php-test/db-values.php
+
+# Xdbug code coverage
+/.phpunit.cache/*
+/coverage/*
+
+# cypress env file
+/cypress.env.json
+
+# File with environment variables (API KEY)
+/environment.php

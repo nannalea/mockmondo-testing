@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php                           [NC,L]
+
+RewriteRule ^$                      view_index.php                      [NC,L]
+RewriteRule ^fly$                   view_index.php                      [NC,L]
+RewriteRule ^home$                  view_index.php                      [NC,L]
+RewriteRule ^index$                 view_index.php                      [NC,L]
+RewriteRule ^login$                 view_login.php                      [NC,L]
+RewriteRule ^overnatning$           view_overnatning.php                [NC,L]
+RewriteRule ^bil$                   view_bil.php                        [NC,L]
+RewriteRule ^færger$                view_færger.php                     [NC,L]
+RewriteRule ^oplevelser$            view_oplevelser.php                 [NC,L]
+RewriteRule ^admin$                 view_admin.php                      [NC,L]
+RewriteRule ^login$                 view_login.php                      [NC,L]
+RewriteRule ^signup$                view_signup.php                     [NC,L]
+RewriteRule ^upload$                view_upload.php                     [NC,L]
+RewriteRule ^search-results$        view_search_results.php             [NC,L]
+
+RewriteRule ^weather/(\w+)$         view_weather.php?city=$1             [NC,L]
+
+ErrorDocument 404 /view_404.php
