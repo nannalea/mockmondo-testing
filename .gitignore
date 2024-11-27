@@ -28,4 +28,4 @@ _test-output.php
 /cypress.env.json
 
 # File with environment variables (API KEY)
-/environment.php
+# /environment.php
